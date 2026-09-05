@@ -1,0 +1,663 @@
+/* AuthorizeSectorTransferModal.css */
+
+.ast-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(10px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.ast-modal-card {
+  background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(56, 189, 248, 0.2);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 780px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: #f8fafc;
+  position: relative;
+  padding: 24px 28px;
+}
+
+/* ── Header ── */
+.ast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.ast-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #d8b4fe;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  margin-bottom: 8px;
+}
+
+.ast-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a855f7;
+  box-shadow: 0 0 8px #a855f7;
+}
+
+.ast-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.ast-sub {
+  font-size: 0.84rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ast-btn-close {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.ast-btn-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* ── Section Blocks ── */
+.ast-section {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.ast-section-label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+/* ── Route Grid ── */
+.ast-route-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 680px) {
+  .ast-route-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ast-facility-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ast-gov-card {
+  border-left: 4px solid #38bdf8;
+}
+.ast-pvt-card {
+  border-left: 4px solid #f43f5e;
+}
+
+.ast-facility-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ast-tag {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.ast-tag-gov {
+  color: #38bdf8;
+}
+.ast-tag-pvt {
+  color: #f43f5e;
+}
+
+.ast-stock-pill {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.ast-stock-pill.safe {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+.ast-stock-pill.crit {
+  background: rgba(244, 63, 94, 0.2);
+  color: #f87171;
+}
+
+.ast-facility-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.ast-facility-meta {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.ast-safe-note {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+.ast-safe-note strong {
+  color: #38bdf8;
+}
+.ast-safe-note.crit {
+  color: #fb7185;
+}
+
+.ast-route-arrow-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.ast-distance-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #a855f7;
+}
+
+/* ── Inputs Grid ── */
+.ast-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 550px) {
+  .ast-inputs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ast-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ast-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.ast-select,
+.ast-input,
+.ast-textarea {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 9px 12px;
+  font-size: 0.86rem;
+  transition: all 0.2s ease;
+}
+
+.ast-select:focus,
+.ast-input:focus,
+.ast-textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.ast-input.readonly {
+  background: rgba(255, 255, 255, 0.04);
+  color: #94a3b8;
+}
+
+.ast-input-hint {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+.ast-input-hint strong {
+  color: #00e676;
+}
+
+/* ── Transport Grid ── */
+.ast-transport-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .ast-transport-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ast-transport-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.ast-transport-card:hover {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.ast-transport-card.selected {
+  border-color: #38bdf8;
+  background: linear-gradient(145deg, rgba(14, 165, 233, 0.12) 0%, rgba(30, 41, 59, 0.9) 100%);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+.ast-rec-tag {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.4);
+}
+
+.ast-transport-top {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.ast-transport-icon-wrap {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.ast-transport-name {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 2px 0;
+}
+
+.ast-transport-desc {
+  font-size: 0.74rem;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.ast-eta-box {
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.ast-eta-box.drone {
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+}
+.ast-eta-box.ambulance {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.ast-eta-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ast-eta-box.drone .ast-eta-label { color: #22d3ee; }
+.ast-eta-box.ambulance .ast-eta-label { color: #fbbf24; }
+
+.ast-eta-val {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 2px 0;
+}
+.ast-eta-box.drone .ast-eta-val { color: #38bdf8; }
+.ast-eta-box.ambulance .ast-eta-val { color: #f59e0b; }
+
+.ast-eta-sub {
+  font-size: 0.68rem;
+  color: #00e676;
+}
+
+.ast-transport-features {
+  font-size: 0.72rem;
+  color: #cbd5e1;
+  padding-left: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── Auth Grid ── */
+.ast-auth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* ── Action Bar ── */
+.ast-action-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+  margin-top: 10px;
+}
+
+.ast-summary-text {
+  font-size: 0.84rem;
+  color: #cbd5e1;
+}
+
+.ast-bg-pill {
+  background: #ff1744;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ast-btn-row {
+  display: flex;
+  gap: 10px;
+}
+
+.ast-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.ast-btn-cancel {
+  background: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+.ast-btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.ast-btn-submit {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+.ast-btn-submit:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5);
+}
+
+/* ── Tracking View ── */
+.ast-tracking-body {
+  padding: 10px 0;
+}
+
+.ast-tracking-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+
+.ast-tracking-icon {
+  font-size: 2.4rem;
+}
+
+.ast-tracking-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 3px 0;
+}
+
+.ast-tracking-sub {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.ast-telemetry-box {
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ast-tele-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+.ast-tele-pct {
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.ast-progress-track {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.ast-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8 0%, #a855f7 50%, #10b981 100%);
+  border-radius: 9999px;
+  transition: width 0.8s ease;
+}
+
+.ast-sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .ast-sensor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ast-sensor-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.ast-sensor-label {
+  font-size: 0.68rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.ast-sensor-val {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+.ast-sensor-val.temp {
+  color: #34d399;
+}
+
+.ast-tracking-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
+}
+
+.ast-live-pulse-note {
+  font-size: 0.78rem;
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ── Confirmed View ── */
+.ast-confirmed-body {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.ast-confirmed-icon-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.15);
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+.ast-confirmed-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+.ast-confirmed-sub {
+  font-size: 0.86rem;
+  color: #94a3b8;
+  max-width: 520px;
+  margin: 0 auto 20px auto;
+  line-height: 1.45;
+}
+
+.ast-receipt-card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: left;
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ast-receipt-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+.ast-receipt-row strong {
+  color: #f1f5f9;
+}
+
+/* ── Hospital Emergency Destination Card Styles ── */
+.ast-hosp-dest-card {
+  border-left: 4px solid #ef4444 !important;
+  background: rgba(239, 68, 68, 0.08) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+.ast-tag-hosp-crit {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #fca5a5 !important;
+  border: 1px solid rgba(239, 68, 68, 0.5) !important;
+}
+
+.hosp-crit-note {
+  color: #fca5a5 !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-left-color: #ef4444 !important;
+}
+

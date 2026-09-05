@@ -1,0 +1,497 @@
+[
+  {
+    "id": "NGP-BB-01",
+    "name": "Government Medical College & Hospital Blood Bank (Model Blood Bank)",
+    "type": "Government / Model Blood Bank",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-GOV-001",
+    "contactEmail": "gmch.bloodbank@nagpur.gov.in",
+    "contactNumber": "+91 712 274 4400",
+    "address": "GMC Hospital Building, 2nd Floor, Medical Square, Hanuman Nagar, Nagpur – 440003",
+    "locality": "Hanuman Nagar / Medical Square",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440003",
+    "coordinates": [79.0963, 21.1275],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 32, "A-": 8,
+        "B+": 45, "B-": 6,
+        "O+": 58, "O-": 12,
+        "AB+": 18, "AB-": 4
+      },
+      "components": {
+        "platelets": 48,
+        "plasmaFFP": 86,
+        "packedRBC": 112,
+        "cryoprecipitate": 24
+      },
+      "totalUnits": 273
+    }
+  },
+  {
+    "id": "NGP-BB-02",
+    "name": "Lifeline Blood Bank Component & Apheresis",
+    "type": "NGO-run, NABH-Accredited",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-NABH-012",
+    "contactEmail": "contact@lifelinebloodbankngp.org",
+    "contactNumber": "+91 712 253 6167",
+    "address": "Lokmat Square, Ramdas Peth, Nagpur – 440010",
+    "locality": "Ramdas Peth",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0782, 21.1398],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 24, "A-": 5,
+        "B+": 38, "B-": 4,
+        "O+": 46, "O-": 7,
+        "AB+": 14, "AB-": 2
+      },
+      "components": {
+        "platelets": 62,
+        "plasmaFFP": 95,
+        "packedRBC": 84,
+        "cryoprecipitate": 18
+      },
+      "totalUnits": 224
+    }
+  },
+  {
+    "id": "NGP-BB-03",
+    "name": "Rainbow Blood & Component Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-045",
+    "contactEmail": "info@rainbowbloodbank.com",
+    "contactNumber": "+91 712 256 0101",
+    "address": "282, Central Bazar Road, Ramdas Peth, Nagpur – 440010",
+    "locality": "Ramdas Peth",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0754, 21.1362],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "08:00 AM – 10:00 PM (Emergency on-call)",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 18, "A-": 3,
+        "B+": 28, "B-": 3,
+        "O+": 34, "O-": 4,
+        "AB+": 9, "AB-": 1
+      },
+      "components": {
+        "platelets": 28,
+        "plasmaFFP": 42,
+        "packedRBC": 55,
+        "cryoprecipitate": 10
+      },
+      "totalUnits": 145
+    }
+  },
+  {
+    "id": "NGP-BB-04",
+    "name": "Shri Sainath Blood Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-078",
+    "contactEmail": "sainathbloodbank@gmail.com",
+    "contactNumber": "+91 712 254 8151",
+    "address": "Near Lokmat Square, Dhantoli, Nagpur – 440010",
+    "locality": "Dhantoli",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0835, 21.1378],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 16, "A-": 2,
+        "B+": 22, "B-": 2,
+        "O+": 29, "O-": 3,
+        "AB+": 7, "AB-": 1
+      },
+      "components": {
+        "platelets": 22,
+        "plasmaFFP": 36,
+        "packedRBC": 48,
+        "cryoprecipitate": 8
+      },
+      "totalUnits": 128
+    }
+  },
+  {
+    "id": "NGP-BB-05",
+    "name": "Dr. Hedgewar Blood Bank (Hedgewar Raktpedhi)",
+    "type": "Trust-run",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-TR-004",
+    "contactEmail": "hedgewar.raktpedhi@gmail.com",
+    "contactNumber": "+91 712 252 8292",
+    "address": "2, Sitaram Smruti, W.H.C. Road, Dharampeth, Nagpur – 440010",
+    "locality": "Dharampeth",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0620, 21.1428],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 42, "A-": 9,
+        "B+": 56, "B-": 8,
+        "O+": 74, "O-": 16,
+        "AB+": 24, "AB-": 5
+      },
+      "components": {
+        "platelets": 78,
+        "plasmaFFP": 120,
+        "packedRBC": 145,
+        "cryoprecipitate": 32
+      },
+      "totalUnits": 394
+    }
+  },
+  {
+    "id": "NGP-BB-06",
+    "name": "Jeevan Jyoti Blood Bank & Components",
+    "type": "Trust-run",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-TR-018",
+    "contactEmail": "jeevanjyoti.trust@gmail.com",
+    "contactNumber": "+91 712 223 1660",
+    "address": "Madhav Nagar, Nagpur – 440010",
+    "locality": "Madhav Nagar",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0658, 21.1292],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 35, "A-": 7,
+        "B+": 48, "B-": 5,
+        "O+": 62, "O-": 11,
+        "AB+": 20, "AB-": 4
+      },
+      "components": {
+        "platelets": 55,
+        "plasmaFFP": 88,
+        "packedRBC": 105,
+        "cryoprecipitate": 22
+      },
+      "totalUnits": 286
+    }
+  },
+  {
+    "id": "NGP-BB-07",
+    "name": "National Blood Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-091",
+    "contactEmail": "nationalbloodbank.ngp@gmail.com",
+    "contactNumber": "+91 712 252 2422",
+    "address": "Vijay Bhawan, Opp. Lokmat, Dhantoli, Nagpur – 440012",
+    "locality": "Dhantoli",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012",
+    "coordinates": [79.0842, 21.1385],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 14, "A-": 2,
+        "B+": 20, "B-": 3,
+        "O+": 26, "O-": 4,
+        "AB+": 6, "AB-": 1
+      },
+      "components": {
+        "platelets": 18,
+        "plasmaFFP": 32,
+        "packedRBC": 40,
+        "cryoprecipitate": 6
+      },
+      "totalUnits": 112
+    }
+  },
+  {
+    "id": "NGP-BB-08",
+    "name": "Wankar Blood Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-103",
+    "contactEmail": "wankarbloodbank@rediffmail.com",
+    "contactNumber": "+91 712 252 3902",
+    "address": "Rajkamal Complex, Panchsheel Square, Wardha Road, Nagpur – 440012",
+    "locality": "Wardha Road / Panchsheel Square",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012",
+    "coordinates": [79.0810, 21.1390],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "08:30 AM – 09:30 PM",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 12, "A-": 2,
+        "B+": 18, "B-": 2,
+        "O+": 22, "O-": 3,
+        "AB+": 5, "AB-": 1
+      },
+      "components": {
+        "platelets": 14,
+        "plasmaFFP": 26,
+        "packedRBC": 34,
+        "cryoprecipitate": 5
+      },
+      "totalUnits": 98
+    }
+  },
+  {
+    "id": "NGP-BB-09",
+    "name": "Central Blood Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-115",
+    "contactEmail": "centralbloodbank.indora@gmail.com",
+    "contactNumber": "+91 712 264 1215",
+    "address": "Parvati Towers, Indora Chowk, Kamptee Road, Nagpur – 440017",
+    "locality": "Kamptee Road / Indora Chowk",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440017",
+    "coordinates": [79.0985, 21.1712],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 20, "A-": 4,
+        "B+": 28, "B-": 4,
+        "O+": 36, "O-": 6,
+        "AB+": 10, "AB-": 2
+      },
+      "components": {
+        "platelets": 30,
+        "plasmaFFP": 44,
+        "packedRBC": 58,
+        "cryoprecipitate": 12
+      },
+      "totalUnits": 154
+    }
+  },
+  {
+    "id": "NGP-BB-10",
+    "name": "Ayush Blood Bank",
+    "type": "Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-PVT-142",
+    "contactEmail": "ayushbloodbank.gandhibaug@gmail.com",
+    "contactNumber": "+91 712 277 0666",
+    "address": "Garud Khamb, Central Avenue, Gandhi Baug, Nagpur – 440018",
+    "locality": "Gandhi Baug / Central Avenue",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440018",
+    "coordinates": [79.1028, 21.1504],
+    "isHub": false,
+    "nabhAccredited": false,
+    "operatingHours": "09:00 AM – 10:00 PM",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 15, "A-": 3,
+        "B+": 24, "B-": 3,
+        "O+": 30, "O-": 4,
+        "AB+": 8, "AB-": 1
+      },
+      "components": {
+        "platelets": 20,
+        "plasmaFFP": 34,
+        "packedRBC": 46,
+        "cryoprecipitate": 7
+      },
+      "totalUnits": 126
+    }
+  },
+  {
+    "id": "NGP-BB-11",
+    "name": "Super Speciality Hospital Blood Bank",
+    "type": "Hospital-affiliated / Specialty",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-HOSP-029",
+    "contactEmail": "ssh.bloodbank@nagpurmedical.org",
+    "contactNumber": "+91 712 274 6681",
+    "address": "Near RST Cancer Hospital, Tukdoji Square, Manewada Road, Nagpur – 440033",
+    "locality": "Tukdoji Square / Manewada Road",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440033",
+    "coordinates": [79.0970, 21.1150],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 26, "A-": 6,
+        "B+": 36, "B-": 5,
+        "O+": 52, "O-": 9,
+        "AB+": 16, "AB-": 3
+      },
+      "components": {
+        "platelets": 65,
+        "plasmaFFP": 82,
+        "packedRBC": 98,
+        "cryoprecipitate": 35
+      },
+      "totalUnits": 248
+    }
+  },
+  {
+    "id": "NGP-BB-12",
+    "name": "Indira Gandhi Medical College & Hospital (Mayo Hospital) Blood Bank",
+    "type": "Government / Medical College",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-GOV-002",
+    "contactEmail": "igmch.mayo.bloodbank@maharashtra.gov.in",
+    "contactNumber": "+91 712 272 5423",
+    "address": "Central Avenue Road, Near Railway Station, Mominpura, Nagpur – 440018",
+    "locality": "Central Avenue / Mominpura",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440018",
+    "coordinates": [79.0935, 21.1540],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 30, "A-": 6,
+        "B+": 42, "B-": 5,
+        "O+": 54, "O-": 10,
+        "AB+": 15, "AB-": 3
+      },
+      "components": {
+        "platelets": 42,
+        "plasmaFFP": 75,
+        "packedRBC": 102,
+        "cryoprecipitate": 20
+      },
+      "totalUnits": 245
+    }
+  },
+  {
+    "id": "NGP-BB-13",
+    "name": "Daga Memorial Women Government Hospital Blood Bank",
+    "type": "Government",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-GOV-003",
+    "contactEmail": "daga.hospital.blood@nagpur.gov.in",
+    "contactNumber": "+91 712 272 1555",
+    "address": "Near Gandhisagar Lake, Mahal, Nagpur – 440002",
+    "locality": "Mahal / Gandhisagar",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440002",
+    "coordinates": [79.1030, 21.1448],
+    "isHub": false,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Maternity & Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 16, "A-": 4,
+        "B+": 24, "B-": 4,
+        "O+": 32, "O-": 6,
+        "AB+": 8, "AB-": 2
+      },
+      "components": {
+        "platelets": 20,
+        "plasmaFFP": 38,
+        "packedRBC": 52,
+        "cryoprecipitate": 14
+      },
+      "totalUnits": 140
+    }
+  },
+  {
+    "id": "NGP-BB-14",
+    "name": "NKP Salve Institute & Lata Mangeshkar Hospital Blood Bank",
+    "type": "Hospital-affiliated",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-HOSP-067",
+    "contactEmail": "lmh.bloodbank@nkpsims.edu.in",
+    "contactNumber": "+91 7104 665 000",
+    "address": "Digdoh Hills, Hingna Road, Nagpur – 440019",
+    "locality": "Hingna Road / Digdoh Hills",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440019",
+    "coordinates": [78.9950, 21.1070],
+    "isHub": true,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Emergency Service",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 28, "A-": 5,
+        "B+": 36, "B-": 6,
+        "O+": 48, "O-": 8,
+        "AB+": 12, "AB-": 2
+      },
+      "components": {
+        "platelets": 35,
+        "plasmaFFP": 65,
+        "packedRBC": 88,
+        "cryoprecipitate": 16
+      },
+      "totalUnits": 208
+    }
+  },
+  {
+    "id": "NGP-BB-15",
+    "name": "Central India Institute of Haematology & Oncology Blood Bank",
+    "type": "Specialty / Private",
+    "facilityRole": "blood-bank",
+    "licenseNumber": "MH-NGP-SPEC-082",
+    "contactEmail": "haematology.bloodbank@ciiho.org",
+    "contactNumber": "+91 712 243 8899",
+    "address": "Superspeciality Blood and Cancer Hospital, Dhantoli, Nagpur – 440012",
+    "locality": "Dhantoli",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440012",
+    "coordinates": [79.0820, 21.1350],
+    "isHub": false,
+    "nabhAccredited": true,
+    "operatingHours": "24/7 Cancer & Thalassemia Transfusion",
+    "inventory": {
+      "wholeBlood": {
+        "A+": 22, "A-": 4,
+        "B+": 30, "B-": 5,
+        "O+": 40, "O-": 7,
+        "AB+": 11, "AB-": 2
+      },
+      "components": {
+        "platelets": 52,
+        "plasmaFFP": 70,
+        "packedRBC": 76,
+        "cryoprecipitate": 28
+      },
+      "totalUnits": 196
+    }
+  }
+]

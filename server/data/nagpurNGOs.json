@@ -1,0 +1,140 @@
+[
+  {
+    "id": "NGP-NGO-01",
+    "name": "Indian Red Cross Society – Nagpur District Branch",
+    "type": "National Humanitarian NGO",
+    "focusAreas": [
+      "Voluntary Blood Donation Drives",
+      "Disaster Emergency Transfusions",
+      "Thalassemia Patient Support Registry",
+      "First Aid & Ambulance Network"
+    ],
+    "contactPerson": "Honorary Secretary / Blood Programme Coordinator",
+    "contactEmail": "redcross.nagpur@gmail.com",
+    "contactNumber": "+91 712 256 1234",
+    "address": "Red Cross Building, Near Collectorate, Civil Lines, Nagpur – 440001",
+    "locality": "Civil Lines",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440001",
+    "coordinates": [79.0725, 21.1510],
+    "campsOrganizedPerYear": 48,
+    "annualUnitsCollected": 4200,
+    "verifiedStatus": true
+  },
+  {
+    "id": "NGP-NGO-02",
+    "name": "Lifeline Blood Centre (NGO Wing)",
+    "type": "NGO-run, NABH-Accredited Healthcare Foundation",
+    "focusAreas": [
+      "Single Donor Platelet (SDP) Apheresis Awareness",
+      "Rare Blood Group Identification Registry",
+      "College & Corporate Blood Donation Camps",
+      "Safe Blood Cold-Chain Transport"
+    ],
+    "contactPerson": "Medical Director & Camp In-Charge",
+    "contactEmail": "ngo@lifelinebloodbankngp.org",
+    "contactNumber": "+91 712 253 6170",
+    "address": "Lokmat Square, Ramdas Peth, Nagpur – 440010",
+    "locality": "Ramdas Peth",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0782, 21.1398],
+    "campsOrganizedPerYear": 64,
+    "annualUnitsCollected": 5800,
+    "verifiedStatus": true
+  },
+  {
+    "id": "NGP-NGO-03",
+    "name": "Jeevan Jyoti Blood Bank Trust",
+    "type": "Public Charitable Trust / Social Wing",
+    "focusAreas": [
+      "Emergency Platelet Mobilization (Flood & Epidemic Relief)",
+      "Voluntary 90-Day Donor Cooldown Club",
+      "Slum & Rural Outreach Blood Camps",
+      "Free Blood Allocation for BPL Patients"
+    ],
+    "contactPerson": "Trust Managing Trustee",
+    "contactEmail": "trust@jeevanjyotiblood.org",
+    "contactNumber": "+91 712 223 0876",
+    "address": "Madhav Nagar, Nagpur – 440010",
+    "locality": "Madhav Nagar",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0658, 21.1292],
+    "campsOrganizedPerYear": 52,
+    "annualUnitsCollected": 4600,
+    "verifiedStatus": true
+  },
+  {
+    "id": "NGP-NGO-04",
+    "name": "Social Welfare Department, District Nagpur (Govt. of Maharashtra)",
+    "type": "Government Social Organization",
+    "focusAreas": [
+      "State-wide Mega Blood Donation Drives",
+      "Youth Red Ribbon Club Initiatives",
+      "Government Employee Mandatory Donation Camps",
+      "Sickle Cell & Thalassemia Welfare Subsidies"
+    ],
+    "contactPerson": "District Social Welfare Officer",
+    "contactEmail": "socialwelfare.nagpur@maharashtra.gov.in",
+    "contactNumber": "+91 712 256 5000",
+    "address": "Administrative Building, Civil Lines, Nagpur – 440001",
+    "locality": "Civil Lines",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440001",
+    "coordinates": [79.0740, 21.1525],
+    "campsOrganizedPerYear": 36,
+    "annualUnitsCollected": 3900,
+    "verifiedStatus": true
+  },
+  {
+    "id": "NGP-NGO-05",
+    "name": "Dr. Kamlesh Kakde Foundation for Voluntary Blood Donation",
+    "type": "Registered Community NGO",
+    "focusAreas": [
+      "South Nagpur Residential Blood Donation Camps",
+      "24/7 WhatsApp Emergency Donor Dispatch",
+      "Aadhaar-Linked Donor Registration Camps",
+      "Platelet Volunteer Squad"
+    ],
+    "contactPerson": "Dr. Kamlesh Kakde (Founder & Chief Coordinator)",
+    "contactEmail": "drkamleshkakde.foundation@gmail.com",
+    "contactNumber": "+91 98222 45678",
+    "address": "F-4, Swayambhu Apartments, Hudkeshwar Road, Nagpur – 440034",
+    "locality": "Hudkeshwar Road",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440034",
+    "coordinates": [79.1120, 21.0980],
+    "campsOrganizedPerYear": 28,
+    "annualUnitsCollected": 2400,
+    "verifiedStatus": true
+  },
+  {
+    "id": "NGP-NGO-06",
+    "name": "Indian Society of Anaesthesiologists – Nagpur City Branch (ISA-NCB)",
+    "type": "Professional Medical Association & NGO",
+    "focusAreas": [
+      "Clinical Blood Transfusion Protocol Workshops",
+      "Hospital-Partnered Voluntary Donation Drives",
+      "Emergency Trauma Perioperative Blood Management",
+      "Physician & Surgeon Donor Awareness"
+    ],
+    "contactPerson": "President / Secretary, ISA Nagpur City Branch",
+    "contactEmail": "isa.nagpur@gmail.com",
+    "contactNumber": "+91 712 254 9900",
+    "address": "IMA Hall, North Ambazari Road, Nagpur – 440010",
+    "locality": "Ambazari / Dharampeth",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "pincode": "440010",
+    "coordinates": [79.0550, 21.1340],
+    "campsOrganizedPerYear": 24,
+    "annualUnitsCollected": 2100,
+    "verifiedStatus": true
+  }
+]

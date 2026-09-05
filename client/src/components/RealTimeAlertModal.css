@@ -1,0 +1,212 @@
+/* ── Global Real-Time Emergency Alert Modal ── */
+.sos-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.sos-modal-card {
+  background: #0f172a;
+  border: 2px solid #ef4444;
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 0 50px rgba(239, 68, 68, 0.4), 0 20px 40px rgba(0,0,0,0.8);
+  position: relative;
+  overflow: hidden;
+  animation: popInBounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popInBounce {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.sos-top-beacon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ef4444, #f59e0b, #ef4444);
+  background-size: 200% 100%;
+  animation: beaconSlide 1.5s infinite linear;
+}
+
+@keyframes beaconSlide {
+  0% { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.sos-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sos-siren-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ef4444;
+  animation: sirenPulse 1s infinite alternate;
+}
+
+@keyframes sirenPulse {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  100% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.8)); }
+}
+
+.sos-title-group h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.01em;
+}
+
+.sos-title-group p {
+  margin: 2px 0 0 0;
+  font-size: 0.78rem;
+  color: #f87171;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Detail Box */
+.sos-details-grid {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sos-blood-badge {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+}
+
+.sos-blood-badge .badge-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  display: block;
+}
+
+.sos-blood-badge .badge-value {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sos-info-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sos-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: #cbd5e1;
+}
+
+.sos-info-row strong {
+  color: #ffffff;
+}
+
+.sos-info-row svg {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+/* Patient Condition Note */
+.sos-condition-note {
+  background: rgba(239, 68, 68, 0.08);
+  border-left: 3px solid #ef4444;
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.82rem;
+  color: #fca5a5;
+  margin-bottom: 20px;
+}
+
+/* Actions */
+.sos-actions-row {
+  display: flex;
+  gap: 10px;
+}
+
+.sos-btn-respond {
+  flex: 1;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #ffffff;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
+}
+
+.sos-btn-respond:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.6);
+}
+
+.sos-btn-dismiss {
+  background: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sos-btn-dismiss:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}

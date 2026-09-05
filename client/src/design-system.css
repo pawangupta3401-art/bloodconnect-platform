@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Corporate Web Application Design System (CSS Custom Properties & Utilities)
+   Conforms to WCAG AA, 8px Grid System, and Modern Professional Typography
+   ========================================================================== */
+
+:root {
+  /* --- 1. Primary Colors --- */
+  --ds-primary: #1A3A5C;
+  --ds-primary-light: #2C5B8C;
+  --ds-primary-dark: #0F2540;
+
+  /* --- 2. Secondary & Accent Colors --- */
+  --ds-accent-teal: #0E7C7B;
+  --ds-slate-gray: #334155;
+
+  /* --- 3. Neutral Colors --- */
+  --ds-white: #FFFFFF;
+  --ds-light-gray: #F8FAFC;
+  --ds-border-gray: #E2E8F0;
+  --ds-dark-gray: #0F172A;
+  --ds-charcoal: #020617;
+
+  /* --- 4. Semantic Status Colors --- */
+  --ds-success: #2F855A;
+  --ds-warning: #C05621;
+  --ds-error: #C53030;
+  --ds-info: #2B6CB0;
+
+  /* --- 5. Typography --- */
+  --ds-font-primary: 'Inter', 'Roboto', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ds-font-secondary: 'Source Serif Pro', Georgia, serif;
+
+  /* Type Scale */
+  --ds-text-h1: 700 2rem/1.2 var(--ds-font-primary);       /* 32px */
+  --ds-text-h2: 700 1.5rem/1.3 var(--ds-font-primary);     /* 24px */
+  --ds-text-h3: 600 1.25rem/1.4 var(--ds-font-primary);    /* 20px */
+  --ds-text-h4: 600 1rem/1.4 var(--ds-font-primary);       /* 16px */
+  --ds-text-body: 400 1rem/1.6 var(--ds-font-primary);     /* 16px */
+  --ds-text-body-sm: 400 0.875rem/1.5 var(--ds-font-primary); /* 14px */
+  --ds-text-caption: 400 0.75rem/1.4 var(--ds-font-primary);  /* 12px */
+  --ds-text-btn: 600 0.875rem/1 var(--ds-font-primary);       /* 14px */
+
+  /* --- 6. Spacing (8px Base Grid) --- */
+  --ds-space-xs: 4px;
+  --ds-space-sm: 8px;
+  --ds-space-md: 16px;
+  --ds-space-lg: 24px;
+  --ds-space-xl: 32px;
+  --ds-space-2xl: 48px;
+  --ds-space-3xl: 64px;
+
+  /* --- 7. Elevation / Shadows --- */
+  --ds-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --ds-shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --ds-shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* --- 8. Borders & Radii --- */
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 8px;
+  --ds-radius-lg: 12px;
+  --ds-radius-full: 9999px;
+
+  /* --- 9. Layout --- */
+  --ds-container-max: 1280px;
+  --ds-navbar-height: 64px;
+}
+
+/* ==========================================================================
+   Component Base Classes
+   ========================================================================== */
+
+/* Buttons */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-space-sm);
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: var(--ds-radius-sm);
+  font: var(--ds-text-btn);
+  cursor: pointer;
+  transition: all 150ms ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.ds-btn-primary {
+  background-color: var(--ds-primary);
+  color: var(--ds-white);
+  border-color: var(--ds-primary);
+}
+.ds-btn-primary:hover {
+  background-color: var(--ds-primary-light);
+  border-color: var(--ds-primary-light);
+}
+.ds-btn-primary:active {
+  background-color: var(--ds-primary-dark);
+}
+
+.ds-btn-secondary {
+  background-color: var(--ds-white);
+  color: var(--ds-primary);
+  border-color: var(--ds-primary);
+}
+.ds-btn-secondary:hover {
+  background-color: var(--ds-light-gray);
+}
+
+.ds-btn-ghost {
+  background-color: transparent;
+  color: var(--ds-primary);
+}
+.ds-btn-ghost:hover {
+  background-color: rgba(26, 58, 92, 0.08);
+}
+
+.ds-btn:disabled, .ds-btn.ds-disabled {
+  background-color: var(--ds-border-gray);
+  color: #A0AEC0;
+  cursor: not-allowed;
+  border-color: var(--ds-border-gray);
+}
+
+/* Inputs */
+.ds-input {
+  width: 100%;
+  padding: 10px 12px;
+  font: var(--ds-text-body-sm);
+  color: var(--ds-dark-gray);
+  background-color: var(--ds-white);
+  border: 1px solid var(--ds-border-gray);
+  border-radius: var(--ds-radius-sm);
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.ds-input:focus {
+  border-color: var(--ds-primary-light);
+  box-shadow: 0 0 0 3px rgba(44, 91, 140, 0.15);
+}
+.ds-input.ds-error {
+  border-color: var(--ds-error);
+}
+
+/* Cards */
+.ds-card {
+  background: var(--ds-white);
+  border-radius: var(--ds-radius-md);
+  padding: var(--ds-space-lg);
+  box-shadow: var(--ds-shadow-1);
+  border: 1px solid var(--ds-border-gray);
+}
+
+/* Tables */
+.ds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: var(--ds-text-body-sm);
+}
+.ds-table th {
+  background-color: var(--ds-light-gray);
+  color: #334155;
+  font-weight: 700;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--ds-border-gray);
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.ds-table td {
+  padding: 12px 16px;
+  color: #0F172A;
+  font-weight: 500;
+  border-bottom: 1px solid var(--ds-border-gray);
+}
+.ds-table tr:hover {
+  background-color: #F8FAFC;
+}
+
+/* Modals */
+.ds-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--ds-space-md);
+}
+.ds-modal {
+  background: var(--ds-white);
+  border-radius: var(--ds-radius-md);
+  box-shadow: var(--ds-shadow-3);
+  width: 100%;
+  max-width: 480px;
+  padding: var(--ds-space-lg);
+}
+.ds-modal-lg {
+  max-width: 720px;
+}

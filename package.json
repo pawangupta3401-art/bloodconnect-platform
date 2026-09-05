@@ -1,0 +1,27 @@
+{
+  "name": "bloodconnect-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BloodConnect & LifeStream Full-Stack Automated Medical Grid Platform",
+  "scripts": {
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "start": "npm run start --prefix server",
+    "dev": "npm run dev --prefix client"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.112.4",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.4",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^9.0.5",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.3"
+  }
+}

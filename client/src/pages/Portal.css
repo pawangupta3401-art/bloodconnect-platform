@@ -1,0 +1,512 @@
+/* ============ CORPORATE LIGHT SHARED PORTAL STYLES ============ */
+
+/* Sidebar */
+.sidebar {
+  background: #FFFFFF !important;
+  border-right: 1px solid #E2E8F0;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-logo {
+  padding: 18px 20px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Sidebar User */
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #E2E8F0;
+  background: #F8FAFC;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #334155;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #F1F5F9;
+  color: #0F172A;
+}
+
+.nav-item.active {
+  background: #FEF2F2;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+  font-weight: 700;
+}
+
+.nav-item svg {
+  flex-shrink: 0;
+}
+
+/* Stat Cards with Colored Left Borders */
+.stat-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-card);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: #CBD5E1;
+}
+
+.stat-card.border-red {
+  border-left-color: #DC2626 !important;
+}
+.stat-card.border-green {
+  border-left-color: #059669 !important;
+}
+.stat-card.border-blue {
+  border-left-color: #0284C7 !important;
+}
+.stat-card.border-purple {
+  border-left-color: #9333EA !important;
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.stat-card-main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stat-number-hero {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0F172A;
+  line-height: 1;
+}
+
+.stat-number-hero.text-sm {
+  font-size: 1.6rem;
+}
+
+.stat-label-muted {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #334155;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.stat-critical-badge {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #DC2626;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Stat Icon Circle */
+.stat-icon-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon-circle.red {
+  background: #FEF2F2;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+}
+
+.stat-icon-circle.green {
+  background: #ECFDF5;
+  color: #059669;
+  border: 1px solid #A7F3D0;
+}
+
+.stat-icon-circle.blue {
+  background: #F0F9FF;
+  color: #0284C7;
+  border: 1px solid #BAE6FD;
+}
+
+.stat-icon-circle.orange,
+.stat-icon-circle.amber {
+  background: #FFFBEB;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+
+.stat-icon-circle.purple {
+  background: #FAF5FF;
+  color: #9333EA;
+  border: 1px solid #E9D5FF;
+}
+
+/* Eligibility Badge */
+.sidebar-eligibility {
+  padding: 16px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.eligibility-badge {
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.eligibility-badge.eligible {
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  color: #059669;
+}
+
+.eligibility-badge.not-eligible {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  color: #D97706;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Alert Row */
+.alert-row {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  margin-bottom: 8px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.alert-row:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.alert-row:last-child {
+  margin-bottom: 0;
+}
+
+/* Highlight Row */
+.highlight-row {
+  background: #FEF2F2 !important;
+  border-color: #FECACA !important;
+}
+
+/* Badge Locked */
+.badge-locked {
+  opacity: 0.5;
+}
+
+/* Blood Groups Mini Grid (Blood Bank) */
+.blood-groups-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+}
+
+.blood-mini-card {
+  text-align: center;
+  padding: 12px 6px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  transition: all var(--transition-base);
+  cursor: default;
+}
+
+.blood-mini-card:hover {
+  transform: translateY(-2px);
+  border-color: #CBD5E1;
+}
+
+.blood-mini-card.status-critical {
+  border-color: #FECACA;
+  background: #FEF2F2;
+}
+
+.blood-mini-card.status-high {
+  border-color: #A7F3D0;
+  background: #ECFDF5;
+}
+
+.mini-status {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  margin-top: 4px;
+  display: inline-block;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-track {
+  display: block;
+  width: 40px;
+  height: 22px;
+  background: #CBD5E1;
+  border-radius: var(--radius-full);
+  position: relative;
+  transition: background var(--transition-base);
+}
+
+.toggle-track::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition-base);
+}
+
+.toggle-switch input:checked + .toggle-track {
+  background: #DC2626;
+}
+
+.toggle-switch input:checked + .toggle-track::after {
+  transform: translateX(18px);
+}
+
+/* Mini gap */
+.gap-xs { gap: var(--space-xs); }
+
+/* Responsive Portal */
+@media (max-width: 768px) {
+  .blood-groups-mini-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 300;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .portal-main {
+    margin-left: 0;
+  }
+
+  .profile-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .blood-groups-mini-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ══════════════════════════════════════════════════════ */
+/* DONATION SCHEDULING MODAL STYLES                     */
+/* ══════════════════════════════════════════════════════ */
+.schedule-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 16px;
+}
+
+.schedule-modal-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  color: #0F172A;
+  animation: slideUpModal 0.25s ease;
+}
+
+@keyframes slideUpModal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.schedule-modal-header {
+  padding: 16px 20px;
+  background: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-modal-body {
+  padding: 20px;
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+.schedule-context-banner {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.eligibility-check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.eligibility-check-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.eligibility-check-card:hover {
+  background: #F1F5F9;
+  border-color: #CBD5E1;
+}
+
+.eligibility-check-card.checked {
+  background: #F0FDF4;
+  border-color: #86EFAC;
+}
+
+.eligibility-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #059669;
+}
+
+.slot-option-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.slot-option-card {
+  background: #F8FAFC;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.slot-option-card:hover {
+  border-color: #DC2626;
+  background: #FFF5F5;
+}
+
+.slot-option-card.active {
+  border-color: #DC2626;
+  background: #FEF2F2;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
+}
+
+.confirmation-summary-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 1px solid #F1F5F9;
+  font-size: 0.86rem;
+}
+
+.confirmation-row:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,91 @@
+version: '3.8'
+
+# TAD §6 — Containerized services (Docker Compose for local/staging)
+# Production: Kubernetes or managed container service
+
+services:
+
+  # ── API Server ──
+  api:
+    build: ./server
+    container_name: bloodconnect-api
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017/bloodconnect
+      - REDIS_URL=redis://redis:6379
+      - JWT_SECRET=${JWT_SECRET}
+      - AES_KEY=${AES_KEY}
+      - AADHAAR_SALT=${AADHAAR_SALT}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE=${TWILIO_PHONE}
+      - FIREBASE_SERVER_KEY=${FIREBASE_SERVER_KEY}
+      - CLIENT_URL=${CLIENT_URL:-http://localhost:5173}
+    depends_on:
+      mongo:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    # TAD §6: Retry with exponential backoff for external calls
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - bloodconnect-net
+
+  # ── React Frontend ──
+  client:
+    build: ./client
+    container_name: bloodconnect-client
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    networks:
+      - bloodconnect-net
+
+  # ── MongoDB (Core Relational + Logs) ──
+  # TAD §6: Read replicas for inventory search (prod: use MongoDB Atlas)
+  mongo:
+    image: mongo:7
+    container_name: bloodconnect-mongo
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: bloodconnect
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bloodconnect-net
+
+  # ── Redis (Message Queue + OTP Store + Rate Limiting) ──
+  # TAD §6: "Message Queue (Redis Streams) — decouples notification dispatch"
+  redis:
+    image: redis:7-alpine
+    container_name: bloodconnect-redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bloodconnect-net
+
+volumes:
+  mongo-data:
+  redis-data:
+
+networks:
+  bloodconnect-net:
+    driver: bridge
